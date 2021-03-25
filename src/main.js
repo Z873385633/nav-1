@@ -3,7 +3,7 @@ const $lastLi = $siteList.find('li.last')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
-    { logo: 'L', logotype: 'text', url: 'https://www.weibo.com' },
+    { logo: 'W', logotype: 'text', url: 'https://www.weibo.com' },
     {
         logo: 'B', logotype: 'text',
         url: 'https://www.bilibili.com'
@@ -56,10 +56,10 @@ $('.addButton').on('click', () => {
     render()
 });
 
-window.onbeforeunload = () => {
-    const string = JSON.stringify(hashMap)
-    localStorage.setItem('x', string)
-};
+// window.onbeforeunload = () => {
+//     const string = JSON.stringify(hashMap)
+//     localStorage.setItem('x', string)
+// };
 $(document).on('keypress', (e) => {
     const { key } = e
     for (let i = 0; i < hashMap.length; i++) {

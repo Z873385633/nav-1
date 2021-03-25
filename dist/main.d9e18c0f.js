@@ -123,7 +123,7 @@ var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
-  logo: 'L',
+  logo: 'W',
   logotype: 'text',
   url: 'https://www.weibo.com'
 }, {
@@ -168,12 +168,10 @@ $('.addButton').on('click', function () {
     url: url
   });
   render();
-});
-
-window.onbeforeunload = function () {
-  var string = JSON.stringify(hashMap);
-  localStorage.setItem('x', string);
-};
+}); // window.onbeforeunload = () => {
+//     const string = JSON.stringify(hashMap)
+//     localStorage.setItem('x', string)
+// };
 
 $(document).on('keypress', function (e) {
   var key = e.key;
@@ -186,4 +184,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.5f8899d7.js.map
+//# sourceMappingURL=main.d9e18c0f.js.map
