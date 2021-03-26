@@ -160,15 +160,3 @@ body{background:rgb(232, 231, 229);}
   font-size: 14px;
   margin-top: 4px;
 }
-
-.SM1{
-  display:none;
-}
-@media(min-width:500px){
-  .SM1{
-      display: block;
-      position: fixed;
-      left: 46%;
-      bottom: 0;
-  }
-}

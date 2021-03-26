@@ -168,10 +168,12 @@ $('.addButton').on('click', function () {
     url: url
   });
   render();
-}); // window.onbeforeunload = () => {
-//     const string = JSON.stringify(hashMap)
-//     localStorage.setItem('x', string)
-// };
+});
+
+window.onbeforeunload = function () {
+  var string = JSON.stringify(hashMap);
+  localStorage.setItem('x', string);
+};
 
 $(document).on('keypress', function (e) {
   var key = e.key;
@@ -184,4 +186,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.d9e18c0f.js.map
+//# sourceMappingURL=main.35d6e135.js.map

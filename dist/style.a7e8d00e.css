@@ -161,16 +161,4 @@ body{background:rgb(232, 231, 229);}
   margin-top: 4px;
 }
 
-.SM1{
-  display:none;
-}
-@media(min-width:500px){
-  .SM1{
-      display: block;
-      position: fixed;
-      left: 46%;
-      bottom: 0;
-  }
-}
-
-/*# sourceMappingURL=style.69751833.css.map */
+/*# sourceMappingURL=style.a7e8d00e.css.map */
